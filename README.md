@@ -1,7 +1,7 @@
 # Simple Shared Memory Example Code for macOS
 
 Here is a Swift project that shows how to used Unix shared memory. 
-Compile and run it from Xcode.
+Compile and run it from Xcode. Look for output on the console.
 
 To compile the C version: run make from the command line.
 To run it: ./shm server &lt;msg&gt; | client | delete
