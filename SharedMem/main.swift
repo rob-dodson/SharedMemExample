@@ -10,7 +10,7 @@ import Foundation
 let data       : String = "UNIX ROCKS!!"
 let buffersize : Int = 128
 let id         : Int32 = 3
-let memkey     : key_t = ftok("/tmp",3)
+let memkey     : key_t = ftok("/tmp",id) // coordination point for this share mem segment
 let server     : Bool = true
 let client     : Bool = false
 
@@ -27,7 +27,7 @@ else if client == true
 {
     if let shared_mem : UnsafeMutableRawPointer = init_shm(memkey: memkey, flags: 0o666, buffersize: buffersize)
     {
-        let bytes = shared_mem.bindMemory(to:UInt8.self, capacity: 128)
+        let bytes = shared_mem.bindMemory(to:UInt8.self, capacity: buffersize)
        
         let str = String.init(cString: bytes)
         print("(server) Reading data=\(str) at addr=\(shared_mem)");
