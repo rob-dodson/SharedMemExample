@@ -11,8 +11,30 @@ let data       : String = "UNIX ROCKS!!"
 let buffersize : Int = 128
 let id         : Int32 = 3
 let memkey     : key_t = ftok("/tmp",id) // coordination point for this share mem segment
-let server     : Bool = true
-let client     : Bool = false
+var server     : Bool = false
+var client     : Bool = true
+
+
+for argument in CommandLine.arguments
+{
+    switch argument
+    {
+    case "server":
+        server = true
+        client = false
+        
+    case "client":
+        server = false
+        client = true
+    
+    case "-?":
+        print("Usage: server | client | delete")
+        exit(1)
+        
+    default:
+        print(argument)
+    }
+}
 
 
 if server == true
