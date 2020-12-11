@@ -11,7 +11,7 @@ import Foundation
 let data       : String = "UNIX ROCKS!!"
 let buffersize : Int = 128
 let id         : Int32 = 3
-let memkey     : key_t = ftok("/tmp",id) // coordination point for this share mem segment
+let memkey     : key_t = ftok("/tmp",id) // coordination point for this shared mem segment
 var server     : Bool = true
 var client     : Bool = false
 var delete     : Bool = false
@@ -91,6 +91,8 @@ else if delete == true
 
     print("Shared memory segment \(shmid) deleted");
 }
+
+exit(0)
 
 
 
