@@ -26,6 +26,7 @@
 		AE6567FB2582937E002E3D68 /* SharedMem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SharedMem; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE6567FE2582937E002E3D68 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AE6568062582A9FA002E3D68 /* shm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shm.c; sourceTree = "<group>"; };
+		AE65680B2583E929002E3D68 /* SharedMem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SharedMem-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				AE6567FE2582937E002E3D68 /* main.swift */,
+				AE65680B2583E929002E3D68 /* SharedMem-Bridging-Header.h */,
 			);
 			path = SharedMem;
 			sourceTree = "<group>";
@@ -257,6 +259,7 @@
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SharedMem/SharedMem-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -275,6 +278,7 @@
 					"@loader_path/../Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SharedMem/SharedMem-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
