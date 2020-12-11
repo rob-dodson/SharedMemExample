@@ -27,6 +27,7 @@
 		AE6567FE2582937E002E3D68 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AE6568062582A9FA002E3D68 /* shm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shm.c; sourceTree = "<group>"; };
 		AE65680B2583E929002E3D68 /* SharedMem-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SharedMem-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE6568112583ED0C002E3D68 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +44,7 @@
 		AE6567F22582937E002E3D68 = {
 			isa = PBXGroup;
 			children = (
+				AE6568112583ED0C002E3D68 /* README.md */,
 				AE6568062582A9FA002E3D68 /* shm.c */,
 				AE6567FD2582937E002E3D68 /* SharedMem */,
 				AE6567FC2582937E002E3D68 /* Products */,
