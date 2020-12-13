@@ -2,7 +2,7 @@
 // Unix/macOS shared memory example in C
 //
 // Typical usage: 
-//    shm server
+//    shm server <msg>
 //    shm client
 //    shm delete
 //
